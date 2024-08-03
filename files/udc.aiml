@@ -311,8 +311,23 @@
         
         <!-- Recommendation full-stack -->
         <category>
-            <pattern></pattern>
-            <template></template>
+            <pattern>RECOMMEND FULL STACK</pattern>
+            <template>
+                Based on your preferences, you might enjoy a career as a 
+                Full-stack Developer! Full-stack developers work on both 
+                front-end and back-end aspects of applications. Would you like 
+                to learn more about this career or start over to try the quiz 
+                again or look at career optoions for post-grad CS majors?
+                
+                <button>
+                    <text>Learn more</text>
+                    <postback>OPTION FULL STACK</postback>
+                </button>
+                <button>
+                    <text>Start over</text>
+                    <postback>START</postback>
+                </button>
+            </template>
         </category>
         
         <!-- Recommendation business analyst -->
