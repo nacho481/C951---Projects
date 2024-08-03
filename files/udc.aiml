@@ -270,7 +270,9 @@
         <template>
             Based on your preferences, you might enjoy a career as a Front-end Developer! 
             Front-end developers create user interfaces and focus on the visual aspects of applications.
-            Would you like to learn more about this career or start over?
+            Would you like to learn more about this career or start over, to 
+            try the quiz again or look at career optoions for post-grad 
+            CS majors?
             <button>
                 <text>Learn more</text>
                 <postback>OPTION FRONT END</postback>
@@ -283,8 +285,35 @@
     </category>
     
         <!-- Recommendation back-end -->
+    <category>
+        <pattern>RECOMMEND BACK END</pattern>
+        <template>
+            Based on your preferences, you might enjoy a career as a back-end 
+            Developer! Back-end developers work as  on server-side logic, 
+            databases, and application integration. Would you like to learn more 
+            about this career or start over, to try the quiz again or look at 
+            career optoions for post-grad CS majors?
+            
+            <!-- Have them learn more -->
+            <button>
+                <text>Learn more</text>
+                <postback>OPTION BACK END</postback>
+            </button>
+            
+            <!-- Have them start over -->
+            <button>
+                <text>Start over</text>
+                <postback>START</postback>
+            </button>
+        </template>
+    </category>
+
         
         <!-- Recommendation full-stack -->
+        <category>
+            <pattern></pattern>
+            <template></template>
+        </category>
         
         <!-- Recommendation business analyst -->
         
