@@ -41,12 +41,7 @@
 
         <!-- Option 2 - Back-end development -->
           <button>
-              <text>Back-end Developers 
-              
-              work on server-side logic, databases, 
-              and application integration. They often use languages like Java, 
-              Python, or C++, and enjoy solving complex problems and working 
-              with data structures.</text>
+              <text>Back-end Developers</text>
               <postback>OPTION BACK END</postback>
           </button>
 
@@ -54,28 +49,19 @@
           <button>
               <text>Full-stack Developers 
               
-              work on both front-end and back-end 
-              aspects of applications. They are versatile, enjoy understanding 
-              entire system architectures, and like seeing projects through 
-              from start to finish</text>
+              </text>
               <postback>OPTION FULL STACK</postback>
           </button>
           
           <!-- Option 4 - Business Analyst -->
           <button>
-              <text>IT Business Analysts bridge the gap between technology and 
-              business needs. They excel in communication, enjoy analyzing 
-              data, and help translate business requirements into technical 
-              specifications.</text>
+              <text>IT Business Analysts </text>
               <postback>OPTION BUSINESS ANALYST</postback>
           </button>
           
           <!-- Option 5 - Devops engineer-->
           <button>
-              <text>DevOps Engineers focus on the deployment, automation, and 
-              maintenance of software systems. They work with cloud 
-              technologies, enjoy optimizing system performance, and have strong 
-              troubleshooting skills.</text>
+              <text>DevOps Engineers</text>
               <postback>OPTION DEV OPS</postback>
           </button>
       </template>
@@ -84,7 +70,9 @@
   <!-- 1. Show option 1 -->
   <category>
       <pattern>OPTION FRONT END</pattern>
-      <template>Developers focus on creating user interfaces and 
+      <template>
+            <!-- response -->
+            Front-end developers focus on creating user interfaces and 
               experiences. They typically work with HTML, CSS, and JavaScript, 
               and enjoy visual design and user interaction. <break/>
               Would you like to go back? 
@@ -106,26 +94,95 @@
   
   <!-- 2. Show option 2 -->
   <category>
-      <pattern></pattern>
-      <template></template>
+      <pattern>OPTION BACK END</pattern>
+      <template>Back-end developers work on server-side logic, databases, 
+              and application integration. They often use languages like Java, 
+              Python, or C++, and enjoy solving complex problems and working 
+              with data structures.</template>
+              
+              <!-- if the user says yes -->
+        <button>
+            <text>Yes</text>
+            <postback>START</postback>
+        </button>
+        
+        <!-- if the user says no -->
+        <button>
+            <text>No</text>
+            <postback>PROMPT GOODBYE</postback>
+        </button>
   </category>
 
-  <!-- 3. Show option 1 -->
+  <!-- 3. Show option 3 -->
   <category>
-      <pattern></pattern>
-      <template></template>
+      <pattern>OPTION FULL STACK</pattern>
+      <template>
+          
+          <!-- Response -->
+          Full-stack developers work on both front-end and back-end 
+              aspects of applications. They are versatile, enjoy understanding 
+              entire system architectures, and like seeing projects through 
+              from start to finish
+          <!-- if the user says yes -->
+        <button>
+            <text>Yes</text>
+            <postback>START</postback>
+        </button>
+        
+        <!-- if the user says no -->
+        <button>
+            <text>No</text>
+            <postback>PROMPT GOODBYE</postback>
+        </button>
+            
+      </template>
   </category>
 
-  <!-- 4. Show option 1 -->
+  <!-- 4. Show option 4 -->
   <category>
-      <pattern></pattern>
-      <template></template>
+      <pattern>OPTION BUSINESS ANALYST</pattern>
+      <template>
+          <!-- Response -->
+          IT Business Analyst bridge the gap between technology and 
+              business needs. They excel in communication, enjoy analyzing 
+              data, and help translate business requirements into technical 
+              specifications.
+              
+              <!-- if the user says yes -->
+        <button>
+            <text>Yes</text>
+            <postback>START</postback>
+        </button>
+        
+        <!-- if the user says no -->
+        <button>
+            <text>No</text>
+            <postback>PROMPT GOODBYE</postback>
+        </button>
+      </template>
   </category>
 
-  <!-- 5. Show option 1 -->
+  <!-- 5. Show option 5 -->
   <category>
-      <pattern></pattern>
-      <template></template>
+      <pattern>OPTION DEV OPS</pattern>
+      <template>
+          <!-- Response -->
+          DevOps focus on the deployment, automation, and 
+              maintenance of software systems. They work with cloud 
+              technologies, enjoy optimizing system performance, and have strong 
+              troubleshooting skills.
+            <!-- if the user says yes -->
+        <button>
+            <text>Yes</text>
+            <postback>START</postback>
+        </button>
+        
+        <!-- if the user says no -->
+        <button>
+            <text>No</text>
+            <postback>PROMPT GOODBYE</postback>
+        </button>
+      </template>
   </category>
   
   <!-- Prompt goodbye -->
