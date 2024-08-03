@@ -71,7 +71,7 @@
   <category>
       <pattern>OPTION FRONT END</pattern>
       <template>
-            <!-- response -->
+            <!-- Response -->
             Front-end developers focus on creating user interfaces and 
               experiences. They typically work with HTML, CSS, and JavaScript, 
               and enjoy visual design and user interaction. <break/>
@@ -88,7 +88,6 @@
             <text>No</text>
             <postback>PROMPT GOODBYE</postback>
         </button>
-        
     </template>
   </category>
   
@@ -98,9 +97,9 @@
       <template>Back-end developers work on server-side logic, databases, 
               and application integration. They often use languages like Java, 
               Python, or C++, and enjoy solving complex problems and working 
-              with data structures.</template>
-              
-              <!-- if the user says yes -->
+              with data structures.
+            
+        <!-- if the user says yes -->
         <button>
             <text>Yes</text>
             <postback>START</postback>
@@ -111,6 +110,7 @@
             <text>No</text>
             <postback>PROMPT GOODBYE</postback>
         </button>
+    </template>
   </category>
 
   <!-- 3. Show option 3 -->
@@ -134,7 +134,6 @@
             <text>No</text>
             <postback>PROMPT GOODBYE</postback>
         </button>
-            
       </template>
   </category>
 
