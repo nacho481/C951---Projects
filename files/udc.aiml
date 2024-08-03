@@ -191,4 +191,103 @@
       time at all. Have a good day! 😁</template>
   </category>
 
+    <!-- Start the quiz -->
+    <category>
+        <pattern>TAKE SHORT QUIZ</pattern>
+        <template>
+            Great! Let's start with a question to understand your interests.
+    
+            Do you prefer working on:
+            
+            <!-- Determine if they can do (front-end) or (full-stack) within
+            this button tag. -->
+            <button>
+                <text>Visual design and user interfaces</text>
+                <postback>QUIZ VISUAL</postback>
+            </button>
+            
+            <!-- Determine if they like (busines analyst) or (back-end - 
+            [back-end] or [full-stack])-->
+            <button>
+                <text>Logic and data processing</text>
+                <postback>QUIZ LOGIC</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Follow-up for visual preference -->
+    <category>
+        <pattern>QUIZ VISUAL</pattern>
+        <template>
+            Interesting! Now, do you also enjoy working on server-side logic?
+            <button>
+                <text>Yes, I like both front-end and back-end</text>
+                <postback>RECOMMEND FULL STACK</postback>
+            </button>
+            <button>
+                <text>No, I prefer focusing on user interfaces</text>
+                <postback>RECOMMEND FRONT END</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Follow-up for logic preference -->
+    <category>
+        <pattern>QUIZ LOGIC</pattern>
+        <template>
+            Great! Do you enjoy working with business processes and communication?
+            <button>
+                <text>Yes, I like bridging tech and business</text>
+                <postback>RECOMMEND BUSINESS ANALYST</postback>
+            </button>
+            <button>
+                <text>No, I prefer focusing on technical challenges</text>
+                <postback>QUIZ BACKEND</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Additional question for backend preference -->
+    <category>
+        <pattern>QUIZ BACKEND</pattern>
+        <template>
+            Do you have a strong interest in system infrastructure and automation?
+            <button>
+                <text>Yes, I love working with infrastructure</text>
+                <postback>RECOMMEND DEVOPS</postback>
+            </button>
+            <button>
+                <text>No, I prefer application development</text>
+                <postback>RECOMMEND BACK END</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- Recommendation categories -->
+        <!-- Recommendation front-end -->
+    <category>
+        <pattern>RECOMMEND FRONT END</pattern>
+        <template>
+            Based on your preferences, you might enjoy a career as a Front-end Developer! 
+            Front-end developers create user interfaces and focus on the visual aspects of applications.
+            Would you like to learn more about this career or start over?
+            <button>
+                <text>Learn more</text>
+                <postback>OPTION FRONT END</postback>
+            </button>
+            <button>
+                <text>Start over</text>
+                <postback>START</postback>
+            </button>
+        </template>
+    </category>
+    
+        <!-- Recommendation back-end -->
+        
+        <!-- Recommendation full-stack -->
+        
+        <!-- Recommendation business analyst -->
+        
+        <!-- Recommendation DevOps -->
+    
 </aiml>
