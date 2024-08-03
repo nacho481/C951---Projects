@@ -35,17 +35,15 @@
           
           <!-- Option 1 - Front-end development -->
           <button>
-              <text>Front-end 
-              
-              Developers focus on creating user interfaces and 
-              experiences. They typically work with HTML, CSS, and JavaScript, 
-              and enjoy visual design and user interaction.</text>
-              <postback>START</postback>
+              <text>Front-end</text>
+              <postback>OPTION FRONT END</postback>
           </button>
 
         <!-- Option 2 - Back-end development -->
           <button>
-              <text>Back-end Developers work on server-side logic, databases, 
+              <text>Back-end Developers 
+              
+              work on server-side logic, databases, 
               and application integration. They often use languages like Java, 
               Python, or C++, and enjoy solving complex problems and working 
               with data structures.</text>
@@ -54,7 +52,9 @@
 
         <!-- Option 3 - Full-stack development -->
           <button>
-              <text>Full-stack Developers work on both front-end and back-end 
+              <text>Full-stack Developers 
+              
+              work on both front-end and back-end 
               aspects of applications. They are versatile, enjoy understanding 
               entire system architectures, and like seeing projects through 
               from start to finish</text>
@@ -82,6 +82,57 @@
   </category>
   
   <!-- 1. Show option 1 -->
+  <category>
+      <pattern>OPTION FRONT END</pattern>
+      <template>Developers focus on creating user interfaces and 
+              experiences. They typically work with HTML, CSS, and JavaScript, 
+              and enjoy visual design and user interaction. <break/>
+              Would you like to go back? 
+        
+        <!-- if the user says yes -->
+        <button>
+            <text>Yes</text>
+            <postback>START</postback>
+        </button>
+        
+        <!-- if the user says no -->
+        <button>
+            <text>No</text>
+            <postback>PROMPT GOODBYE</postback>
+        </button>
+        
+    </template>
+  </category>
   
+  <!-- 2. Show option 2 -->
+  <category>
+      <pattern></pattern>
+      <template></template>
+  </category>
+
+  <!-- 3. Show option 1 -->
+  <category>
+      <pattern></pattern>
+      <template></template>
+  </category>
+
+  <!-- 4. Show option 1 -->
+  <category>
+      <pattern></pattern>
+      <template></template>
+  </category>
+
+  <!-- 5. Show option 1 -->
+  <category>
+      <pattern></pattern>
+      <template></template>
+  </category>
   
+  <!-- Prompt goodbye -->
+  <category>
+      <pattern>PROMPT GOODBYE</pattern>
+      <template>It's been a pleasure helping you. Type 'Start' again at any
+      time at all. Have a good day! 😁</template>
+  </category>
+
 </aiml>
