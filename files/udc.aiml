@@ -47,7 +47,7 @@
               and application integration. They often use languages like Java, 
               Python, or C++, and enjoy solving complex problems and working 
               with data structures.</text>
-              <postback>START</postback>
+              <postback>OPTION BACK END</postback>
           </button>
 
         <!-- Option 3 - Full-stack development -->
@@ -58,7 +58,7 @@
               aspects of applications. They are versatile, enjoy understanding 
               entire system architectures, and like seeing projects through 
               from start to finish</text>
-              <postback>START</postback>
+              <postback>OPTION FULL STACK</postback>
           </button>
           
           <!-- Option 4 - Business Analyst -->
@@ -67,7 +67,7 @@
               business needs. They excel in communication, enjoy analyzing 
               data, and help translate business requirements into technical 
               specifications.</text>
-              <postback>START</postback>
+              <postback>OPTION BUSINESS ANALYST</postback>
           </button>
           
           <!-- Option 5 - Devops engineer-->
@@ -76,7 +76,7 @@
               maintenance of software systems. They work with cloud 
               technologies, enjoy optimizing system performance, and have strong 
               troubleshooting skills.</text>
-              <postback>START</postback>
+              <postback>OPTION DEV OPS</postback>
           </button>
       </template>
   </category>
