@@ -35,19 +35,19 @@
           
           <!-- Option 1 - Front-end development -->
           <button>
-              <text>Front-end</text>
+              <text>1. Front-end</text>
               <postback>OPTION FRONT END</postback>
           </button>
 
         <!-- Option 2 - Back-end development -->
           <button>
-              <text>Back-end Developers</text>
+              <text>2. Back-end Developers</text>
               <postback>OPTION BACK END</postback>
           </button>
 
         <!-- Option 3 - Full-stack development -->
           <button>
-              <text>Full-stack Developers 
+              <text>3. Full-stack Developers 
               
               </text>
               <postback>OPTION FULL STACK</postback>
@@ -55,13 +55,13 @@
           
           <!-- Option 4 - Business Analyst -->
           <button>
-              <text>IT Business Analysts </text>
+              <text>4. IT Business Analysts </text>
               <postback>OPTION BUSINESS ANALYST</postback>
           </button>
           
           <!-- Option 5 - Devops engineer-->
           <button>
-              <text>DevOps Engineers</text>
+              <text>5. DevOps Engineers</text>
               <postback>OPTION DEV OPS</postback>
           </button>
       </template>
