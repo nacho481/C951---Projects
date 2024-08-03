@@ -97,7 +97,8 @@
       <template>Back-end developers work on server-side logic, databases, 
               and application integration. They often use languages like Java, 
               Python, or C++, and enjoy solving complex problems and working 
-              with data structures.
+              with data structures. <break/>
+              Would you like to go back? 
             
         <!-- if the user says yes -->
         <button>
@@ -117,12 +118,12 @@
   <category>
       <pattern>OPTION FULL STACK</pattern>
       <template>
-          
           <!-- Response -->
           Full-stack developers work on both front-end and back-end 
               aspects of applications. They are versatile, enjoy understanding 
               entire system architectures, and like seeing projects through 
-              from start to finish
+              from start to finish <break/>
+              Would you like to go back? 
           <!-- if the user says yes -->
         <button>
             <text>Yes</text>
@@ -145,7 +146,8 @@
           IT Business Analyst bridge the gap between technology and 
               business needs. They excel in communication, enjoy analyzing 
               data, and help translate business requirements into technical 
-              specifications.
+              specifications. <break/>
+              Would you like to go back? 
               
               <!-- if the user says yes -->
         <button>
@@ -169,7 +171,8 @@
           DevOps focus on the deployment, automation, and 
               maintenance of software systems. They work with cloud 
               technologies, enjoy optimizing system performance, and have strong 
-              troubleshooting skills.
+              troubleshooting skills. <break/>
+              Would you like to go back? 
             <!-- if the user says yes -->
         <button>
             <text>Yes</text>
@@ -271,7 +274,7 @@
             Based on your preferences, you might enjoy a career as a Front-end Developer! 
             Front-end developers create user interfaces and focus on the visual aspects of applications.
             Would you like to learn more about this career or start over, to 
-            try the quiz again or look at career optoions for post-grad 
+            try the quiz again or look at career options for post-grad 
             CS majors?
             <button>
                 <text>Learn more</text>
@@ -292,7 +295,7 @@
             Developer! Back-end developers work as  on server-side logic, 
             databases, and application integration. Would you like to learn more 
             about this career or start over, to try the quiz again or look at 
-            career optoions for post-grad CS majors?
+            career options for post-grad CS majors?
             
             <!-- Have them learn more -->
             <button>
@@ -310,28 +313,75 @@
 
         
         <!-- Recommendation full-stack -->
-        <category>
-            <pattern>RECOMMEND FULL STACK</pattern>
-            <template>
-                Based on your preferences, you might enjoy a career as a 
-                Full-stack Developer! Full-stack developers work on both 
-                front-end and back-end aspects of applications. Would you like 
-                to learn more about this career or start over to try the quiz 
-                again or look at career optoions for post-grad CS majors?
-                
-                <button>
-                    <text>Learn more</text>
-                    <postback>OPTION FULL STACK</postback>
-                </button>
-                <button>
-                    <text>Start over</text>
-                    <postback>START</postback>
-                </button>
-            </template>
-        </category>
+    <category>
+        <pattern>RECOMMEND FULL STACK</pattern>
+        <template>
+            Based on your preferences, you might enjoy a career as a 
+            Full-stack Developer! Full-stack developers work on both 
+            front-end and back-end aspects of applications. Would you like 
+            to learn more about this career or start over, to try the quiz 
+            again or look at career options for post-grad CS majors?
+            
+            <!-- Have them learn more-->
+            <button>
+                <text>Learn more</text>
+                <postback>OPTION FULL STACK</postback>
+            </button>
+            
+            <!-- Start over -->
+            <button>
+                <text>Start over</text>
+                <postback>START</postback>
+            </button>
+        </template>
+    </category>
         
         <!-- Recommendation business analyst -->
+    <category>
+        <pattern>RECOMMEND BUSINESS ANALYST</pattern>
+        <template>
+            Based on your preferences, you might enjoy a career as an IT 
+            Business Analyst! IT Business Analysts bridge the gap between 
+            technology and business needs. Would you like to learn more about 
+            this career or start over, to try the quiz again or look at career 
+            options for post-grad CS majors?
+            
+            <!-- Have them lear more -->
+            <button>
+                <text>Learn more</text>
+                <postback>OPTION BUSINESS ANALYST</postback>
+            </button>
+            
+            <!-- Have them start over -->
+            <button>
+                <text>Start over</text>
+                <postback>START</postback>
+            </button>
+        </template>
+    </category>
+        
         
         <!-- Recommendation DevOps -->
+    <category>
+        <pattern>RECOMMEND DEVOPS</pattern>
+        <template>
+            Based on your preferences, you might enjoy a career as a DevOps 
+            Engineer! DevOps Engineers focus on the deployment, automation, and 
+            maintenance of software systems. Would you like to learn more about 
+            this career or start over?
+            
+            <!-- Have them learn more -->
+            <button>
+                <text>Learn more</text>
+                <postback>OPTION DEV OPS</postback>
+            </button>
+            
+            <!-- Have them start over -->
+            <button>
+                <text>Start over</text>
+                <postback>START</postback>
+            </button>
+        </template>
+    </category>
     
 </aiml>
