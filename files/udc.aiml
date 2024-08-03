@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+  </category>
+  
+  <!-- Create button to initialize the program -->
+  <category>
+      <pattern>START</pattern>
+      <template>
+          Welcome! I'm here to help you explore career options in computer 
+          science. Would you like to:
+          <!-- Option 1 -->
+          <button>
+              <text>1. Show career options</text>
+              <postback>SHOW CAREER OPTIONS</postback>
+          </button>
+          
+          <!-- Option 2 -->
+          <button>
+              <text>2. Take a short quiz to get personalized recommendations</text>
+              <postback>TAKE SHORT QUIZ</postback>
+          </button>
+      </template>
+  </category>
+  
+  
+  <!-- Answering Question 1 - See list of potential career paths. -->
+  <category>
+      <pattern>SHOW CAREER OPTIONS</pattern>
+      <template>
+        Here are five potential career paths for Computer Science graduates:
+
+          
+          <!-- Option 1 - Front-end development -->
+          <button>
+              <text>Front-end 
+              
+              Developers focus on creating user interfaces and 
+              experiences. They typically work with HTML, CSS, and JavaScript, 
+              and enjoy visual design and user interaction.</text>
+              <postback>START</postback>
+          </button>
+
+        <!-- Option 2 - Back-end development -->
+          <button>
+              <text>Back-end Developers work on server-side logic, databases, 
+              and application integration. They often use languages like Java, 
+              Python, or C++, and enjoy solving complex problems and working 
+              with data structures.</text>
+              <postback>START</postback>
+          </button>
+
+        <!-- Option 3 - Full-stack development -->
+          <button>
+              <text>Full-stack Developers work on both front-end and back-end 
+              aspects of applications. They are versatile, enjoy understanding 
+              entire system architectures, and like seeing projects through 
+              from start to finish</text>
+              <postback>START</postback>
+          </button>
+          
+          <!-- Option 4 - Business Analyst -->
+          <button>
+              <text>IT Business Analysts bridge the gap between technology and 
+              business needs. They excel in communication, enjoy analyzing 
+              data, and help translate business requirements into technical 
+              specifications.</text>
+              <postback>START</postback>
+          </button>
+          
+          <!-- Option 5 - Devops engineer-->
+          <button>
+              <text>DevOps Engineers focus on the deployment, automation, and 
+              maintenance of software systems. They work with cloud 
+              technologies, enjoy optimizing system performance, and have strong 
+              troubleshooting skills.</text>
+              <postback>START</postback>
+          </button>
+      </template>
+  </category>
+  
+  <!-- 1. Show option 1 -->
+  
+  
+</aiml>
